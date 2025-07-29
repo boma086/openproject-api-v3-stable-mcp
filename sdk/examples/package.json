@@ -1,0 +1,18 @@
+{
+  "name": "OpenProject_API_V3_Stable_",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "openproject-api-v3-stable": "file:../",
+    "zod": "3.22.0"
+  },
+  "scripts": {
+    "setup": "npm --prefix ../ install && npm --prefix ../ run build && npm install",
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "5.3.3"
+  }
+}
